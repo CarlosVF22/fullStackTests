@@ -28,7 +28,7 @@ const PlayersSchema = {
         type: DataTypes.STRING
     },
     teamId: {
-        field: 'team_id',
+        field: 'teamId',
         allowNull: false,
         type: DataTypes.INTEGER,
         references: {

@@ -19,7 +19,7 @@ class Teams extends Model{
     static associate(models) {
         this.hasMany(models.Players, {
             as: 'players',
-            foreingKey: 'team_id'
+            foreingKey: 'teamId'
         });
     }
 

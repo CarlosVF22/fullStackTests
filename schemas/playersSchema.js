@@ -3,20 +3,20 @@ const Joi = require('joi');
 const id = Joi.number().integer();
 const name = Joi.string().min(2);
 const position = Joi.string().min(2);
-const nationality = Joi.string().min(2);
+const nation = Joi.string().min(2);
 const teamName = Joi.string().min(2);
 
 const createPlayerSchema = Joi.object({
     name: name.required(),
     position: position.required(),
-    nationality: nationality.required(),
+    nation: nation.required(),
     teamName: teamName.required()
 });
 
 const updatePlayerSchema = Joi.object({
     name: name,
     position: position,
-    nationality: nationality,
+    nation: nation,
     teamName: teamName
 });
 
